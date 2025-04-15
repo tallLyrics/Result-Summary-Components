@@ -1,0 +1,232 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+.background{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(221, 100%, 96%);
+  height: 100vh;
+  font-family: Hanken Grotesk, sans-serif;
+  font-optical-sizing: auto;
+} 
+
+
+.original-container{
+  /*background-color: rgb(97, 181, 153);*/
+  display: flex;
+  flex-direction: row; 
+  justify-content: center;
+}
+
+.left-container{
+  background-color: hsl(252, 100%, 67%);
+  height: 490px;
+  width: 400px; /* This was my own width that i used before later changing it to AI's correction*/
+ /*  max-width: 400px;This max-width was suggested by AI cos it says my fixed with is 400 and might 
+  not fit for smaller screen of 375*/
+   /*width: 90%;  Adjusts to screen size */ /*This was also suggested by AI*/
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  left: 20px;
+}
+
+.your-result{
+  margin-top: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  color:  hsl(241, 100%, 89%);
+  width:290px;
+  height: 50px;
+  display: flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ /* background-color: black;*/
+}
+
+.inner-div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(50, 31, 225, 0.522);
+  border-radius: 80px;
+  height: 160px;
+  width: 160px;
+  color: hsl(0, 0%, 100%);
+}
+
+.great{
+  color: white;
+  font-size:30px;
+  font-weight: 700;
+}
+
+.scored-higher{
+  margin-bottom: 25px;
+  text-align: center;
+  color: rgba(242, 242, 242, 0.677);
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.sevensixfontsize{
+  font-size: 70px;
+  font-weight: bolder;
+  color: white;
+}
+
+.right-container{
+  height: 490px;
+  width: 400px;
+  border-radius: 25px;
+  background-color: hsl(0, 0%, 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.summary{
+  margin-top: 15px;
+  background-color: white;
+  width:290px;
+  height: 50px;
+  display: flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 21px;
+  font-weight: bold;
+  color:rgba(0, 0, 0, 0.768);
+}
+
+.reaction-container,
+ .memory-container, 
+ .verbal-container,
+ .visual-container{
+  width:290px;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 15px;
+  font-weight: 700;
+}
+
+.reaction-container{
+  background-color:hsla(0, 100%, 67%, 0.211);
+}
+
+.memory-container{
+  background-color:hsla(39, 100%, 56%, 0.27);
+}
+
+.verbal-container{
+  background-color:  hsla(166, 100%, 37%, 0.171);
+}
+
+.visual-container{
+  background-color: hsla(234, 85%, 45%, 0.155);
+}
+
+.reaction-left-side, 
+.memory-left-side,
+.verbal-left-side,
+.visual-left-side
+{
+  /*background-color: blueviolet;*/
+  width: 120px;
+  display: flex;
+  justify-content: space-around; 
+  align-items: center;
+  font-size: 20px;
+  height: 30px;
+  margin-left: 15px;
+}
+
+.reaction-left-side{
+  color:  hsla(0, 90%, 63%, 0.932);
+}
+
+.memory-left-side{
+  color: hsl(39, 100%, 53%);  
+}
+
+.verbal-left-side{
+  color:  hsl(166, 100%, 37%);
+}
+
+.visual-left-side{
+  color: hsl(234, 85%, 45%);
+}
+
+.overhundred{
+  /*background-color: aquamarine; */
+  margin-right: 13px;
+  font-size: 20px;
+  color:rgba(0, 0, 0, 0.664);
+}
+
+/*.memory-container{
+  background-color:hsla(39, 100%, 56%, 0.27);
+  width:290px;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 15px;
+  font-weight: 700;
+}*/
+
+
+.divide{
+  color:rgba(0, 0, 0, 0.253);
+}
+
+
+.continue{
+  margin-bottom: 25px;
+  background-color: hsl(224, 30%, 27%);
+  width:290px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 145px;
+  color: white;
+}
+
+.continue:hover{
+  cursor: pointer;
+  background-color:  hsla(224, 30%, 27%, 0.926) ;
+  color:rgb(242, 242, 242);
+}
+
+
+/* Mobile styles (default - 375px and similar) */
+@media (max-width: 375px) {
+  .original-container {
+    background-color: #ffe4e1;
+    font-size: 14px;
+  }
+}
+
+/* Desktop styles (min-width: 1440px) */
+@media (min-width: 1440px) {
+  .original-container {
+    width: 60%;
+    background-color: #e6f7ff;
+    font-size: 18px;
+  }
+}
